@@ -1,0 +1,44 @@
+/* Colors */
+:root {
+    --dark-blue: #003366;
+    --silver: #C0C0C0;
+    --fluorescent-green: #00FF00;
+}
+
+/* Container Styles */
+.container-content {
+    background-color: var(--silver);
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Card Styles */
+.card {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.container-content:hover {
+    background-color: var(--dark-blue);
+    color: var(--fluorescent-green);
+    transform: scale(1.05);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .container-content {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-content {
+        margin: 10px;
+    }
+}
